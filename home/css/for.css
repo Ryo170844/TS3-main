@@ -1,4 +1,4 @@
-.Boxprice {
+.col-md-3.col-sm-6.col-xs-12.float-shadow {
     background-color: antiquewhite;
     display: inline-flex;
 }
@@ -9,39 +9,31 @@
     display: block;
 }
 
-.lvl-one{ 
-    background-color: aqua;
-    padding: 10px;
-    margin: 10px;
+.lvl-one { 
+    background-color: rgb(255, 255, 255);
+    
 }
 
 .lvl-two{
     background-color: rgb(241, 53, 6);
-    padding: 10px;
-    margin: 10px;
+    
 }
 
 .lvl-three{
     background-color: rgb(120, 192, 118);
-    padding: 10px;
-    margin: 10px;
 }
 
 .lvl-four{
     background-color: rgb(83, 50, 42);
-    padding: 10px;
-    margin: 10px;
+    
 }
 
 .price_table_body {
     background-color: rgb(82, 82, 77);
-    margin: 10px;
-    padding: 10px;
+
 }
 
-.col-md-3.col-sm-6.col-xs-12.float-shadow {
-    background-color: aquamarine;
-}
+
 
 .row {
     background-color: blueviolet;

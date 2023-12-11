@@ -19,7 +19,7 @@ if ($data !== null) {
     // Successfully decoded
     foreach ($data as $item) {
 
-        echo '  <div class="Boxprice">
+        echo '  <div class="container">
                         <div class="row">
                             <div class="col-md-3 col-sm-6 col-xs-12 float-shadow">
                                 <div class="price_table_box">
