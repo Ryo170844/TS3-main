@@ -1,0 +1,30 @@
+[
+  {
+    "class": "lvl-one",
+    "id": 1,
+    "name": "80 USER",
+    "normal_price": 800,
+    "discount_price": 40
+  },
+  {
+    "class": "lvl-two",
+    "id": 2,
+    "name": "100 USER",
+    "normal_price": 1000,
+    "discount_price": 50
+  },
+  {
+    "class": "lvl-three",
+    "id": 3,
+    "name": "215 USER",
+    "normal_price": 2150,
+    "discount_price": 90
+  },
+  {
+    "class": "lvl-four",
+    "id": 4,
+    "name": "512 USER",
+    "normal_price": 5120,
+    "discount_price": 150
+  }
+]

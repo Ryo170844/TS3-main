@@ -1,0 +1,28 @@
+.sticky {
+    position: fixed;
+    top: 0;
+}
+
+.sticky+.content {
+    padding-top: 60px;
+}
+
+#linkimg{
+    width: 250px;
+    height: auto;
+}
+
+
+#navbar {
+    background-color: white;
+}
+
+#navbar a {
+    color: #000000;
+  }
+  #navbar a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+

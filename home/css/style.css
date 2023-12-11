@@ -1,0 +1,110 @@
+.Boxprice {
+    background-color: antiquewhite;
+    display: inline-flex;
+}
+
+.price_table_box {
+    align-items: center;
+    text-align: center;
+    display: block;
+}
+
+.price_table_head {
+    background-color: rgb(206, 205, 205);
+    font-size: 24px;
+    padding: 10px;
+    background: #EEE;
+    font-weight: bold;
+}
+
+.warning-bg{   
+    background-color: #f0ad4e;
+    border-color: #eea236;
+    
+}
+
+.cost{
+    font-size: 24px;
+}
+
+sup, sub {
+    font-size: 10px;
+    height: 0;
+    line-height: 1;
+    position: relative;
+    vertical-align: baseline;
+}
+
+.price_table_body {
+    background-color: rgb(255, 255, 255);
+}
+
+
+.price_table_row:nth-of-type(even) {
+    background-color: rgb(206, 205, 205);
+    
+}
+.col-md-3 .col-sm-6 .col-xs-12 .float-shadow {
+    background-color: rgb(238, 238, 238);
+}
+
+.row {
+    background-color: blueviolet;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+
+}
+.btn-lg {
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.33;
+    border-radius: 6px;
+}
+.btn-warning {
+    color: #fff;
+    background-color: #f0ad4e;
+    border-color: #eea236;
+    
+    margin-top: 0.2rem;
+}
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.428571429;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    min-width: 80px;
+}
+.btn {
+    border-radius: 10px;
+}
+
+.lvl-one h2{ 
+    background-color: aqua;
+    padding: 10px;
+    margin: 10px;
+}
+
+.sec{
+    background-color: rgb(241, 53, 6);
+    padding: 10px;
+    margin: 10px;
+}
