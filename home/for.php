@@ -1,41 +1,46 @@
-<head>
-    <link rel="stylesheet" href="css/for.css">
-</head>
+ <?php
+            require("../headandfooter/head.php");
+            ?>
 
-<?php
-    require("../headandfooter/head.php");
-    ?>
+    <link rel="stylesheet" href="css/style.css">
 
-<?php
-// Read JSON data from file
-$jsonFile = 'for.json';
-$jsonData = file_get_contents($jsonFile);
 
-// Decode JSON to PHP array
-$data = json_decode($jsonData, true);
 
-// Check for decoding errors
-if ($data !== null) {
-    // Successfully decoded
-    foreach ($data as $item) {
+    <div class="container text-center">
+        <div class="row">
 
-        echo '  <div class="container">
-                        <div class="row">
-                            <div class="col-md-3 col-sm-6 col-xs-12 float-shadow">
+           
+            <?php
+            // Read JSON data from file
+            $jsonFile = 'for.json';
+            $jsonData = file_get_contents($jsonFile);
+
+            // Decode JSON to PHP array
+            $data = json_decode($jsonData, true);
+
+            // Check for decoding errors
+            if ($data !== null) {
+                // Successfully decoded
+                foreach ($data as $item) {
+
+                    echo '  
+                            <div class="col-md-3 col-sm-6 col-xs-12 float-shadow ' . $item['class'] . '">
                                 <div class="price_table_box">
-                                <div class="price_table_head">' . $item['name'] . '
+                                <strong>
+                                <div class="price_table_head">
+                                ' . $item['name'] . '
                                     <br>
                                     จากราคาปกติ
                                     <br>
                                     <s><b><font color="red">' . $item['normal_price'] . '</font></b></s> บาท
                                 </div>
                                 <div class= ' . $item['class'] . '>
-                                <div class="price_table_row cost warning-bg">
+                                <div class="price_table_row bg discount">
                                     ' . $item['discount_price'] . ' บาท
                                     <sup>30 วัน</sup>
                                 </div>
                                 <div class="price_table_row">
-                                    ลิขสิทธิ์แท้ (ATHP)
+                                    <font color="blue">ลิขสิทธิ์แท้ (ATHP)</font>
                                 </div>
                                 <div class="price_table_row">
                                     <u>ฟรี</u>ระบบจัดการเซิร์ฟเวอร์
@@ -61,10 +66,12 @@ if ($data !== null) {
                                 <div class="price_table_row">
                                     รองรับโดเมนภาษาไทย
                                 </div>
-                                <div class="price_table_row">
-                                    รองรับผู้ใช้งานต่างประเทศ 99%
-                                    ระบบสมาชิกสำหรับผู้ใช้งาน
+                                <div class="price_table_row">                               
+                                    รองรับผู้ใช้งานต่างประเทศ 99%<br>
+                                <a href="" class="bg-text">
+                                    ระบบสมาชิกสำหรับผู้ใช้งาน<br>
                                     ต่างประเทศ!!
+                                </a>
                                 </div>
                                 <div class="price_table_row">
                                     <u>ฟรี</u> Firewall (กันยิง)
@@ -109,17 +116,21 @@ if ($data !== null) {
                                     "รองรับทั้ง TS3 เวอร์ชั่นใหม่และเก่า"
                                 </a>
                             </div>
+                            </strong>
                         </div>
-                    </div>
-                </div>
+            <br>
             </div>';
-    }
-} else {
-    // Decode failed
-    echo "Failed to decode JSON from file. Error: " . json_last_error_msg();
-}
-?>
+                }
+            } else {
+                // Decode failed
+                echo "Failed to decode JSON from file. Error: " . json_last_error_msg();
+            }
+            ?>
+        </div>
+    </div>
+
+    
 
 <?php
-    require("../headandfooter/footer.php");
-    ?>
+require("../headandfooter/footer.php");
+?>

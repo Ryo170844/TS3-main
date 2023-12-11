@@ -35,7 +35,7 @@
         <div class="navbar container">
             <div class="container" id="navbar">
                 <a class="navbar-brand" href="#">
-                    <img id="linkimg" src="headandfooter\img\logots3thai.png" alt="">
+                    <img id="linkimg" src="img\logots3thai.png" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
